@@ -1,0 +1,43 @@
+<!-- 官方文件 http://bootstrap-notify.remabledesigns.com/ -->
+
+<!-- Source Code https://codepen.io/christan0612/pen/NNjowE -->
+<html lang="en" class="">
+<head>
+  <!-- 1. bootstrap3.3.5 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- 2. animate.min.css" -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+</head>
+<body>
+  <button class="btn btn-primary">進入產生通知</button>
+  <!-- 3. jquery.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <!-- 4. bootstrap-notify.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js"></script>
+
+  <script>
+    $.notify({
+      title: '<strong>測試用</strong>',
+      icon: 'glyphicon glyphicon-star',
+      message: "飛進來了!"
+    },
+      {
+        type: 'info',
+        animate: {
+          enter: 'animated fadeInUp',
+          exit: 'animated fadeOutRight'
+        },
+
+        placement: {
+          from: "bottom",
+          align: "left"
+        },
+
+        offset: 20,
+        spacing: 10,
+        z_index: 1031
+      });
+  </script>
+</body>
+
+</html>
